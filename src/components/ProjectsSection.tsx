@@ -3,6 +3,7 @@ import { ExternalLink, Github, Filter, Eye, EyeOff } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import thumbnail from "@/assets/thumbnail-2.jpg"; // Adjust the path as necessary
 
 const ProjectsSection = () => {
   const [filter, setFilter] = useState("all");
@@ -149,7 +150,7 @@ const ProjectsSection = () => {
               >
                 <div className="aspect-video relative overflow-hidden">
                   <img
-                    src="src/assets/thumbnail-2.jpg"
+                    src={thumbnail}
                     alt={project.title}
                     className="absolute inset-0 w-full h-full object-cover"
                   />
@@ -254,7 +255,7 @@ const ProjectsSection = () => {
                 >
                   <div className="aspect-video bg-gradient-secondary relative overflow-hidden">
                     <img
-                      src="src/assets/thumbnail-2.jpg"
+                      src={thumbnail}
                       alt={project.title}
                       className="absolute inset-0 w-full h-full object-cover"
                     />

@@ -10,7 +10,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-background border-t border-border py-12">
+    <footer className="bg-background border-t border-border py-2">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center text-center space-y-6">
           {/* Back to Top Button */}
@@ -34,8 +34,8 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="flex items-center gap-2 text-muted-foreground">
-            <span>© 2025 Amith Biju. Made with</span>
-            <Heart className="h-4 w-4 text-red-500 fill-current" />
+            <span>© 2025 AmithBiju</span>
+            {/* <Heart className="h-4 w-4 text-red-500 fill-current" /> */}
           </div>
 
           {/* Tech Stack Credit */}

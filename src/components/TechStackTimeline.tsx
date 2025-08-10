@@ -70,7 +70,7 @@ const TechStackTimeline = () => {
   };
 
   return (
-    <section id="tech-timeline" className="py-20 bg-background">
+    <section id="timeline" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-left mb-16 fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">

@@ -50,17 +50,29 @@ const HeroSection = () => {
               className="flex flex-col sm:flex-row gap-4 mb-8 lg:mb-12 lg:pt-11 fade-in visible"
               style={{ animationDelay: "0.3s" }}
             >
-              <Button className="btn-hero px-6 md:px-8 py-3 text-base md:text-lg">
-                <Mail className="mr-2 h-4 md:h-5 w-4 md:w-5" />
-                Get In Touch
-              </Button>
-              <Button
-                variant="outline"
-                className="btn-outline px-6 md:px-8 py-3 text-base md:text-lg"
+              <a
+                href="mailto:amithbiju1@gmail.com" // Change to your PDF path or URL
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <FileText className="mr-2 h-4 md:h-5 w-4 md:w-5" />
-                View Resume
-              </Button>
+                <Button className="btn-hero px-6 md:px-8 py-3 text-base md:text-lg">
+                  <Mail className="mr-2 h-4 md:h-5 w-4 md:w-5" />
+                  Get In Touch
+                </Button>
+              </a>
+              <a
+                href="/amith_resume.pdf" // Change to your PDF path or URL
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant="outline"
+                  className="btn-outline px-6 md:px-8 py-3 text-base md:text-lg"
+                >
+                  <FileText className="mr-2 h-4 md:h-5 w-4 md:w-5" />
+                  View Resume
+                </Button>
+              </a>
             </div>
 
             <div

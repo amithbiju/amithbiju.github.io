@@ -147,14 +147,20 @@ const ProjectsSection = () => {
                 key={project.id}
                 className="card-hover bg-card shadow-soft overflow-hidden"
               >
-                <div className="aspect-video bg-gradient-secondary relative overflow-hidden">
-                  <div className="absolute inset-0 flex items-center justify-center text-6xl text-muted-foreground/20">
+                <div className="aspect-video relative overflow-hidden">
+                  <img
+                    src="src/assets/thumbnail-2.jpg"
+                    alt={project.title}
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center text-6xl text-muted-foreground/55">
                     {project.title
                       .split(" ")
                       .map((word) => word[0])
                       .join("")}
                   </div>
                 </div>
+
                 <CardHeader>
                   <CardTitle className="flex items-center justify-between">
                     {project.title}
@@ -247,12 +253,18 @@ const ProjectsSection = () => {
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <div className="aspect-video bg-gradient-secondary relative overflow-hidden">
-                    <div className="absolute inset-0 flex items-center justify-center text-4xl text-muted-foreground/20 font-bold">
+                    <img
+                      src="src/assets/thumbnail-2.jpg"
+                      alt={project.title}
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center text-6xl text-muted-foreground/55">
                       {project.title
                         .split(" ")
                         .map((word) => word[0])
                         .join("")}
                     </div>
+
                     {project.featured && (
                       <Badge className="absolute top-3 right-3 bg-accent-green text-white">
                         Featured

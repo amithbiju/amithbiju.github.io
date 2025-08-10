@@ -89,7 +89,7 @@ const ContactSection = () => {
     {
       icon: FileText,
       label: "Resume",
-      href: "bright-developer-folio/src/assets/amith_resume.pdf",
+      href: "/amith_resume.pdf",
       description: "Download my resume",
     },
   ];
@@ -101,15 +101,15 @@ const ContactSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
             Let's Work Together
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          {/* <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             I'm always excited to discuss new opportunities and interesting
             projects. Let's create something amazing together!
-          </p>
+          </p> */}
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Form */}
-          <div className="fade-in">
+          {/* <div className="fade-in">
             <Card className="bg-card shadow-soft">
               <CardHeader>
                 <CardTitle className="text-2xl">Send me a message</CardTitle>
@@ -215,7 +215,34 @@ const ContactSection = () => {
                 </form>
               </CardContent>
             </Card>
-          </div>
+          </div> */}
+          {/* Social Links */}
+          <Card className="bg-card shadow-soft">
+            <CardHeader>
+              <CardTitle className="text-xl">Connect with me</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 p-3 rounded-lg hover:bg-muted transition-colors group"
+                >
+                  <div className="w-10 h-10 bg-muted rounded-full flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                    <social.icon className="h-5 w-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">{social.label}</h4>
+                    <p className="text-muted-foreground text-sm">
+                      {social.description}
+                    </p>
+                  </div>
+                </a>
+              ))}
+            </CardContent>
+          </Card>
 
           {/* Contact Information */}
           <div className="space-y-8 fade-in" style={{ animationDelay: "0.2s" }}>
@@ -253,7 +280,7 @@ const ContactSection = () => {
               </CardContent>
             </Card>
 
-            {/* Social Links */}
+            {/* Social Links
             <Card className="bg-card shadow-soft">
               <CardHeader>
                 <CardTitle className="text-xl">Connect with me</CardTitle>
@@ -279,7 +306,7 @@ const ContactSection = () => {
                   </a>
                 ))}
               </CardContent>
-            </Card>
+            </Card> */}
 
             {/* Quick Contact */}
             {/* s */}
